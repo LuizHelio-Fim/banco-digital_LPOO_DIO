@@ -7,4 +7,6 @@ public interface IConta {
 	void depositar(double value);
 	
 	void transferir(Conta contaDestino, double value);
+	
+	void imprimirExtrato();
 }
