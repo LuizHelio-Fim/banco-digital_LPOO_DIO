@@ -5,10 +5,12 @@ import org.dio.accounts.*;
 public class Main {
 
 	public static void main(String[] args) {
-		Conta cc = new ContaCorrente();
+		Cliente luiz = new Cliente();
+		luiz.setNome("Luiz");
+		Conta cc = new ContaCorrente(luiz);
 		cc.depositar(1500);
 		
-		Conta poupanca = new ContaPoupanca();
+		Conta poupanca = new ContaPoupanca(luiz);
 		
 		cc.transferir(poupanca, 500);
 		
