@@ -1,10 +1,14 @@
 package org.dio.accounts;
 
 public class ContaPoupanca extends Conta{
+	
+	public ContaPoupanca(Cliente cliente) {
+		super(cliente);
+	}
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("--- EXtrato Conta Poupança ---");
+		System.out.println("--- Extrato Conta Poupança ---");
 		imprimirInfosComuns();
 
 	}
